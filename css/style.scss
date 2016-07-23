@@ -1,0 +1,251 @@
+//HEADER 
+
+header {
+	background-image: url(../img/bg-header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 450px;
+	background-color: #ccc;
+}
+
+header .logo {
+	height: 50px; 
+	width: 50px; 
+	float: left; 
+	margin: 10px 30px 0 10px;
+    opacity: 0.7;
+}
+
+header nav {
+	float: right; 
+	margin: 30px 30px 0 0;
+}
+
+header nav a {
+	display: inline-block;
+	margin-left: 20px;
+	color: #d7dfdf;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+header nav a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+header h1 {
+	font-size: 78px; 
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	clear: both; // De esta manera no le afecta los floats right y left.
+	padding-top: 100px;
+}
+
+header h1 span {
+	display: inline-block;
+	border: white solid 10px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	text-align: center; 
+	font-weight: 700;
+	color: white;
+	letter-spacing: 5px;
+}
+
+//SECTION ABOUT-ME 
+
+section h3 {
+	font-weight: 700;
+	font-size: 20px;
+	color: #c99065;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+section .face-lockup {
+	max-width: 800px;
+	display: flex; 
+   	justify-content: space-around; //mismo espacio en todos los items
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon {
+	font-size: 30px;
+	border-radius: 50%;
+	padding: 30px;
+	color: #c99065;
+	background-color: #d7dfdf;
+}
+
+.face-img {
+	height: 200px;
+	width: 200px; 
+	border-radius: 50%;
+	background-color: grey;
+}
+
+.blurb {
+	max-width: 640px; 
+	padding: 0 15px; 
+	margin: 50px auto;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 600px){
+	section [class="face-lockup"] {
+		display: block;
+		text-align: center;
+	}
+	div [class="face-img"] {
+		display: block;
+		background-position: center; 
+		justify-content: center;
+		margin: 20px auto;
+	}
+};
+
+section .skill-lockup {
+	text-align: center;
+}
+
+.skill-lockup {
+	max-width: 700px;
+	margin:  100px auto;
+	color: #999;
+
+}
+
+.skill-unit {
+	width: 350px;
+}
+
+.skill-icons {
+	font-size: 0;
+	margin: 2px 0 30px;
+}
+
+.skill-icons span {
+	display: inline-block;
+	height: 14px;
+	width:14px;
+	background-color: #c99065;
+	margin-right: 5px;
+	border-radius: 30%
+}
+
+.skill-icons span:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 30%;
+	margin: 2px;
+}
+
+.skill-8 span:nth-child(n+9) {
+	background-color: #999;
+}
+
+//SECTION WORK
+
+.work-section {
+	background: #d7dfdf;
+}
+
+.thumb-container {
+	max-width: 960px;
+	margin: 0px auto;
+	padding-bottom: 100px;
+}
+
+.thumb-unit {
+	width: 25%;
+	background-color: pink;
+	display: block;
+	float: left;
+	position: relative;
+	height: 150px;
+	overflow: hidden;
+
+	background-image: url(../img/work/295H.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.thumb-overlay {
+	position: absolute;
+	top: 0;
+	background: fade-out(0.5);
+	color: #c99065;
+}
+
+.thumb-overlay strong {
+	display: block;
+	padding: 20px;
+	color: white;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 24px;
+	text-align: center;
+	height: 150px;
+	line-height: 1.2;
+}
+
+.thumb-unit:hover {
+	opacity: 0.4;
+}
+
+//FOOTER 
+
+footer {
+	background-image: url(../img/bg-header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+footer .lockup {
+	padding: 50px 30px;
+}
+
+footer .logo {
+	height: 50px; 
+	width: 50px; 
+	float: left; 
+	margin: 0 30px 0 10px;
+    opacity: 0.7;
+}
+
+footer nav a {
+	display: inline-block;
+	margin-left: 20px;
+	color: #d7dfdf;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+footer nav a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.copyright {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: white;
+	margin-left: 110px;
+}
